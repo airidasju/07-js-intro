@@ -1,0 +1,17 @@
+{
+  "name": "07-js-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "numbers": "nodemone .js/02-numbers.js",
+    "labas": "nodemon ./js/01-labas.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
