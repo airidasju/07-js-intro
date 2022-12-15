@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "rangeSum": "nodemon ./rangeSum/zeroFuel.js",
     "zeroFuel": "nodemon ./codeWars/zeroFuel.js",
     "shop": "nodemon ./tasks/shop.js",
     "for": "nodemon ./js/10-for.js",
