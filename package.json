@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "rangeSum": "nodemon ./rangeSum/zeroFuel.js",
+    "rangeDivide": "nodemon ./tasks/rangeDivide.js",
+    "rangeSum": "nodemon ./tasks/rangeSum.js",
     "zeroFuel": "nodemon ./codeWars/zeroFuel.js",
     "shop": "nodemon ./tasks/shop.js",
     "for": "nodemon ./js/10-for.js",
