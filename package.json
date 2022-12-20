@@ -10,6 +10,7 @@
     "rangeSum": "nodemon ./tasks/rangeSum.js",
     "zeroFuel": "nodemon ./codeWars/zeroFuel.js",
     "shop": "nodemon ./tasks/shop.js",
+    "stringMethod": "nodemon ./js/12-string-method.js",
     "ternary": "nodemon ./js/11-ternary.js",
     "for": "nodemon ./js/10-for.js",
     "if": "nodemon ./js/09-if.js",
