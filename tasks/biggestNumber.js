@@ -10,13 +10,17 @@ function biggestNumber(list) {
         return 'ERROR: masyvas negali buti tuscias.';
     }
 
-    let max = list[0];
+    let max = -Infinity;
 
-    for (let i = 1; i < list.length; i++) {
+    for (let i = 0; i < list.length; i++) {
         const number = list[i];
-        if (number > max) {
+        if (typeof number === 'number' && isFinite(number) && number > max) {
             max = number;
         }
+    }
+
+    if (max === -Infinity) {
+        return 'ERROR: sarase nera nei vieno normalaus skaiciaus.';
     }
 
     return max;
@@ -59,3 +63,5 @@ console.log(biggestNumber(['true', 0, -1, -2]), '-->', 0);
 
 console.log(biggestNumber(['true', true, NaN, [], [5], Infinity, -Infinity, 0]), '-->', 0);
 console.log(biggestNumber(['true', true, NaN, [], [5], Infinity, -Infinity]));
+
+console.log(biggestNumber([-5, [[78], 14], 0, 18]), '-->', 78);
