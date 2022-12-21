@@ -1,3 +1,5 @@
+console.clear();
+
 // destrukturizavimas - destructuring
 
 const pazymiai = [10, 9, 8, 7, 6];
@@ -42,6 +44,8 @@ console.log(numbers);
 console.log(numbers2);
 console.log(numbers3);
 
+// SPREAD - išrašymas/iškopijavimas
+
 const person = {
     name: 'Maryte',
     age: 88,
@@ -69,3 +73,33 @@ console.log(person2.car.brand);
 
 const { childrenCount, happy, favoriteColor } = person2;
 console.log(childrenCount, happy, favoriteColor);
+
+console.clear();
+
+const a = ['a', 'aa'];
+const b = ['b', 'bb'];
+const c = ['c', 'cc'];
+
+const doubleABC = [...a, 111, ...b, ...c];
+const doubleCBA = [...c, ...b, 222, ...a];
+console.log(doubleABC);
+console.log(doubleCBA);
+
+const oa = { a: 'a', aa: 'aa' };
+const ob = { b: 'b', bb: 'bb' };
+const oc = { c: 'c', cc: 'cc' };
+
+const oABC = { ...oa, ...oc, gg: 'gg', ...ob, cc: 'nebe CC' };
+console.log(oABC);
+console.log(oABC.cc);
+console.log(oABC.gg);
+
+const user = {
+    name: 'Username',
+    password: 'pasword12',
+};
+console.log(user);
+
+const user2 = { ...user, name: 'Petras' };
+console.log(user2);
+console.log(user2.name);
