@@ -10,6 +10,7 @@
     "rangeSum": "nodemon ./tasks/rangeSum.js",
     "zeroFuel": "nodemon ./codeWars/zeroFuel.js",
     "shop": "nodemon ./tasks/shop.js",
+    "loops": "nodemon ./js/16-loops.js",
     "rest": "nodemon ./js/15-rest.js",
     "spread": "nodemon ./js/14-spread.js",
     "arrow": "nodemon ./js/13-arrow.js",
