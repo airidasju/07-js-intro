@@ -78,8 +78,18 @@ console.log(vedePilnameciai5);
 
 const onlyNamesOfMarried = students
     .filter(s => s.isMarried)
+    .filter(s => s.age >= 18)
     .map(s => s.name);
 console.log(onlyNamesOfMarried);
 
 const onlyMarriedCount = students.filter(s => s.isMarried).length;
 console.log(onlyMarriedCount);
+
+const onlyFans = [];
+for (const student of students) {
+    if (student.isMarried && student.age >= 18) {
+        onlyFans.push(student.name);
+    }
+}
+
+console.log(onlyFans);
