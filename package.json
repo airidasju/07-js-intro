@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "class": "nodemon ./class/index.js",
     "biggestNumber": "nodemon ./tasks/biggestNumber.js",
     "digitCount": "nodemon ./tasks/digitCount.js",
     "rangeDivide": "nodemon ./tasks/rangeDivide.js",
