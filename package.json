@@ -2,6 +2,7 @@
   "name": "07-js-intro",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "class": "nodemon ./class/index.js",
