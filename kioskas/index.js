@@ -34,24 +34,25 @@ onlineKioskas.items();
 // // 5) Cepelinai - 1.95 EUR;
 // // ====================
 
-// onlineKioskas.updatePrice('bulves', 90);
+onlineKioskas.updatePrice('bulves', 90);
 // // "Meskiuko kioskas" updated price and sells bulves for 0.90 EUR now!
 
-// onlineKioskas.createCart('Augustas');
+onlineKioskas.createCart('Augustas');
 // // Augustas have an open cart at "Meskiuko kioskas"!
 
-// onlineKioskas.createCart('Barbora');
+onlineKioskas.createCart('Barbora');
 // // Barbora have an open cart at "Meskiuko kioskas"!
 
-// onlineKioskas.addItemToCart('Augustas', 2, 1);
-// onlineKioskas.addItemToCart('Augustas', 4, 2);
-// onlineKioskas.addItemToCart('Augustas', 5, 1);
+onlineKioskas.addItemToCart('Augustas', 2, 1);
+onlineKioskas.addItemToCart('Augustas', 4, 2);
+onlineKioskas.addItemToCart('Augustas', 5, 1);
 
-// onlineKioskas.addItemToCart('Barbora', 1, 2);
-// onlineKioskas.addItemToCart('Barbora', 3, 1);
-// onlineKioskas.addItemToCart('Barbora', 5, 1);
+onlineKioskas.addItemToCart('Barbora', 1, 2);
+onlineKioskas.addItemToCart('Barbora', 3, 1);
+onlineKioskas.addItemToCart('Barbora', 5, 1);
 
-// onlineKioskas.order('Augustas');
+
+onlineKioskas.order('Augustas');
 // /*
 // {
 //     owner: 'Augustas',
@@ -63,7 +64,7 @@ onlineKioskas.items();
 // }
 // */
 
-// onlineKioskas.order('Barbora');
+onlineKioskas.order('Barbora');
 // /*
 // {
 //     owner: 'Barbora',
