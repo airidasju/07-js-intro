@@ -11,17 +11,17 @@ class Shop {
         console.log("====================");
     }
 
+
+
     addItem(item, price){
         console.log(`${this.shopName} sells ${item} for ${(price/100).toFixed(2)} ${this.currency} now!`)
-        this.inventory[item] = (price/100).toFixed(2)
-
+        this.inventory[item] = {[item]:(price/100).toFixed(2)}
     }
     items() {
         let counter = 0
         console.log("====================");
         for(const item in this.inventory) {
             counter ++
-            this.inventory[counter] = {item: item, price: (this.inventory[item])}
             console.log(`${counter}) ${item.charAt(0).toUpperCase() + item.slice(1)} - ${this.inventory[item]}`)
         }
         

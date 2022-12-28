@@ -64,7 +64,7 @@ onlineKioskas.order('Augustas');
 // }
 // */
 
-onlineKioskas.order('Barbora');
+// onlineKioskas.order('Barbora');
 // /*
 // {
 //     owner: 'Barbora',
