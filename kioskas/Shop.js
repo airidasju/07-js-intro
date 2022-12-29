@@ -2,7 +2,7 @@ class Shop {
     constructor(shopName, currency) {
         this.shopName = shopName;
         this.currency = currency;
-        this.inventory = {}
+        this.inventory = []
         this.carts = {}
     }
 
@@ -15,19 +15,19 @@ class Shop {
 
     addItem(item, price){
         console.log(`${this.shopName} sells ${item} for ${(price/100).toFixed(2)} ${this.currency} now!`)
-        this.inventory[item] = {[item]:(price/100).toFixed(2)}
+        this.inventory.push({name:item, price: (price/100).toFixed(2)})
     }
     items() {
         let counter = 0
         console.log("====================");
-        for(const item in this.inventory) {
+        for(const item of this.inventory) {
             counter ++
-            console.log(`${counter}) ${item.charAt(0).toUpperCase() + item.slice(1)} - ${this.inventory[item]}`)
+            console.log(`${counter}) ${item.name}`)
         }
         
     }
     updatePrice(item, price) {
-        this.inventory[item] = (price/100).toFixed(2)
+        this.inventory.push({name:item, price: (price/100).toFixed(2)})
     }
     createCart(name) {
         this.carts[name] = {}
