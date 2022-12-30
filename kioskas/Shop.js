@@ -27,7 +27,7 @@ class Shop {
         
     }
     updatePrice(item, price) {
-        this.inventory.item.price = price
+        this.inventory[item] = ({price: (price/100).toFixed(2)})
     }
     createCart(name) {
         this.carts[name] = {}
